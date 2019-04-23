@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		86D76C822252579B00933334 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D76C812252579B00933334 /* main.swift */; };
 		86D76C89225257AE00933334 /* 001_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D76C88225257AE00933334 /* 001_TwoSum.swift */; };
+		E12CEE4A226ED2310017DA26 /* 003_LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CEE49226ED2310017DA26 /* 003_LongestSubstringWithoutRepeatingCharacters.swift */; };
 		E1B98A172266DD3F0049B1F6 /* 002_AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B98A162266DD3F0049B1F6 /* 002_AddTwoNumbers.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		86D76C7E2252579B00933334 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D76C812252579B00933334 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		86D76C88225257AE00933334 /* 001_TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 001_TwoSum.swift; sourceTree = "<group>"; };
+		E12CEE49226ED2310017DA26 /* 003_LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 003_LongestSubstringWithoutRepeatingCharacters.swift; sourceTree = "<group>"; };
 		E1B98A162266DD3F0049B1F6 /* 002_AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 002_AddTwoNumbers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				86D76C812252579B00933334 /* main.swift */,
 				86D76C88225257AE00933334 /* 001_TwoSum.swift */,
 				E1B98A162266DD3F0049B1F6 /* 002_AddTwoNumbers.swift */,
+				E12CEE49226ED2310017DA26 /* 003_LongestSubstringWithoutRepeatingCharacters.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D76C89225257AE00933334 /* 001_TwoSum.swift in Sources */,
+				E12CEE4A226ED2310017DA26 /* 003_LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				E1B98A172266DD3F0049B1F6 /* 002_AddTwoNumbers.swift in Sources */,
 				86D76C822252579B00933334 /* main.swift in Sources */,
 			);
