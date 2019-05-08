@@ -1,30 +1,10 @@
-//
-//  001_TwoSum.swift
-//  LeetCode
-//
-//  Created by Toru Asai on 2019/04/01.
-//  Copyright © 2019 Toru Asai. All rights reserved.
-//
-
 /*
  https://leetcode.com/problems/two-sum/
- 
- Given an array of integers, return indices of the two numbers such that they add up to a specific target.
- 
- You may assume that each input would have exactly one solution, and you may not use the same element twice.
- 
- Example:
- 
- Given nums = [2, 7, 11, 15], target = 9,
- 
- Because nums[0] + nums[1] = 2 + 7 = 9,
- return [0, 1].
- 
  */
 
 import Foundation
 
-class TwoSumSolution {
+class Solution {
     
     // O(n^2) ブルートフォース データ構造作らずに探索
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
@@ -39,7 +19,7 @@ class TwoSumSolution {
     }
     
     // O(n) データ構造を作ってから探索
-    func twoSum0(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
         var dictionary: [Int: Int] = [:]
         for (index, num) in nums.enumerated() {
             dictionary[num] = index
@@ -56,7 +36,7 @@ class TwoSumSolution {
     }
     
     // O(n) データ構造を作りながら探索
-    func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum2(_ nums: [Int], _ target: Int) -> [Int] {
         var dictionary: [Int: Int] = [:]
         
         for (index, num) in nums.enumerated() {
@@ -71,3 +51,12 @@ class TwoSumSolution {
         return []
     }
 }
+
+let answer = Solution().twoSum([2, 7, 11, 15], 9)
+print(answer)
+
+let answer1 = Solution().twoSum1([2, 7, 11, 15], 9)
+print(answer1)
+
+let answer2 = Solution().twoSum2([2, 7, 11, 15], 9)
+print(answer2)
