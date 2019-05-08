@@ -28,8 +28,30 @@ class Solution {
         
         return result
     }
+    
+    func lengthOfLongestSubstring1(_ s: String) -> Int {
+        let n = s.count
+        var set = Set<Character>()
+        var ans = 0, i = 0, j = 0
+        
+        while i < n && j < n {
+            if !set.contains(s[s.index(s.startIndex, offsetBy: j)]) {
+                j += 1
+                set.insert(s[s.index(s.startIndex, offsetBy: j)])
+                ans = max(ans, j - i)
+            } else {
+                i += 1
+                set.remove(s[s.index(s.startIndex, offsetBy: i)])
+            }
+        }
+        return ans
+    }
 }
 
 print(Solution().lengthOfLongestSubstring("abcabcbb"))
 print(Solution().lengthOfLongestSubstring("bbbbb"))
 print(Solution().lengthOfLongestSubstring("pwwkew"))
+
+print(Solution().lengthOfLongestSubstring1("abcabcbb"))
+print(Solution().lengthOfLongestSubstring1("bbbbb"))
+print(Solution().lengthOfLongestSubstring1("pwwkew"))

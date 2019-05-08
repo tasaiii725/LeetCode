@@ -52,11 +52,6 @@ class Solution {
     }
 }
 
-let answer = Solution().twoSum([2, 7, 11, 15], 9)
-print(answer)
-
-let answer1 = Solution().twoSum1([2, 7, 11, 15], 9)
-print(answer1)
-
-let answer2 = Solution().twoSum2([2, 7, 11, 15], 9)
-print(answer2)
+print(Solution().twoSum([2, 7, 11, 15], 9))
+print(Solution().twoSum1([2, 7, 11, 15], 9))
+print(Solution().twoSum2([2, 7, 11, 15], 9))

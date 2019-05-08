@@ -14,6 +14,7 @@ public class ListNode {
 }
 
 class Solution {
+    
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         let dummy = ListNode(0)
         var l1 = l1, l2 = l2, carry = 0
@@ -36,7 +37,7 @@ class Solution {
         if carry > 0 {
             node?.next = ListNode(carry)
         }
-        return dummy.next // because ListNode is class
+        return dummy.next // ListNodeはクラス（参照）なのでdummyに値が入っている
     }
 }
 
